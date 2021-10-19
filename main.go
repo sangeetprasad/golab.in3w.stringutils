@@ -1,12 +1,13 @@
-package main
+package stringutils
 
-import (
-	"fmt"
+import "strings"
 
-	u "github.com/sangeet.prasad/stringutils"
-)
+// Upper returns the uppercase of the given string argument.
+func Upper(s string) string {
+	return strings.ToUpper(s)
+}
 
-func main() {
-	fmt.Println(u.Upper("Hello, World"))
-	fmt.Println(u.Lower("Hello, World"))
+// Lower returns the lowercase of the given string argument.
+func Lower(s string) string {
+	return strings.ToLower(s)
 }
